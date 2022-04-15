@@ -1,0 +1,26 @@
+.pagination-custom {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+  column-gap: 40px;
+  border-top: 1.2px solid rgb(168, 168, 168);
+  &__prev {
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.838);
+    border-radius: 2px;
+  }
+  &__prev:hover {
+    background-color: rgba(255, 166, 0, 0.806);
+  }
+  &__prev:disabled {
+    background-color: rgba(132, 211, 238, 0.393);
+    cursor: not-allowed;
+  }
+  &__numbers {
+    display: flex;
+    column-gap: 15px;
+    max-width: 70%;
+    overflow: hidden;
+  }
+}

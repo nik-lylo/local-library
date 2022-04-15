@@ -1,0 +1,14 @@
+.avatar-custom {
+  height: 36px;
+  width: 36px;
+  background: linear-gradient(94.43deg, #a464f1 -18.98%, #efbdd4 113.48%);
+  opacity: 0.2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__icon {
+    font-size: 22px;
+    color: #2c2c31;
+  }
+}

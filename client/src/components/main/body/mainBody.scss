@@ -1,0 +1,14 @@
+.main-body {
+  flex: 1 1 auto;
+}
+.slider-container {
+  margin: 30px auto;
+}
+
+.main-body__swiper {
+  flex: 1 1 auto;
+}
+
+.main-body__loader {
+  height: calc(100vh - 127px - 50px - 60px);
+}

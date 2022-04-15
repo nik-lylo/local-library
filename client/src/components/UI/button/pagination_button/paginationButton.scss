@@ -1,0 +1,18 @@
+.pagination-button {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.838);
+  transition: all 0.4s ease;
+  border-radius: 2px;
+}
+.pagination-button:hover {
+  background-color: rgba(255, 166, 0, 0.4);
+}
+.pagination-button_active {
+  background-color: rgba(255, 166, 0, 0.806) !important;
+}

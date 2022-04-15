@@ -1,0 +1,62 @@
+// *Обнулення стилів css
+@import url("./null.scss");
+body {
+  font-family: "Montserrat", sans-serif;
+  background: white;
+}
+
+// *Підключення іконочного шрифту
+@import url(../../assets/icon-fonts/style.scss);
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-router {
+  padding-top: 60px;
+  flex: 1 1 auto;
+}
+
+._container {
+  max-width: 1260px;
+  padding: 0px 10px 0px 10px !important;
+  height: 100%;
+  margin: 0 auto;
+}
+
+._catalog-title {
+  color: #6f6e6e;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+._author-title {
+  font-size: 14px;
+  color: rgb(165, 42, 42);
+  font-weight: 500;
+  max-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+._book-title {
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #2c2c31dd;
+}
+
+._catalog-underline {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90.03deg, #00ddff 0%, #ff00d4 100%);
+}

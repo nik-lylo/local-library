@@ -1,0 +1,10 @@
+.main-header {
+  height: 50px;
+  background: #f4f4f4;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,17 @@
+.link-genre {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: #2c2c31;
+  transition: all 0.4s ease;
+  text-decoration: none;
+
+  &:hover {
+    background: linear-gradient(94.43deg, #ea469a -18.98%, #ed7f67 113.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}

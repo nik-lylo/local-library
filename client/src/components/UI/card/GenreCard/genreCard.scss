@@ -1,0 +1,72 @@
+.genre-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px 10px 15px;
+  margin: 15px 0px;
+  background: white;
+  &__left {
+    display: flex;
+    column-gap: 10px;
+  }
+  &__right {
+    display: flex;
+  }
+}
+
+.card-left {
+  &__image {
+    max-height: 150px;
+    min-width: 120px;
+    object-fit: cover;
+    object-position: center center;
+  }
+  &__link:hover {
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0px 0px 8px 6px #ba919197;
+  }
+
+  &__content {
+    max-width: 60%;
+  }
+
+  &__description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #2c2c31;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+    height: 67px;
+    max-height: 67px;
+  }
+  &__more {
+    height: 20px;
+    font-size: 14px;
+    color: rgb(54, 194, 241);
+    cursor: pointer;
+  }
+  &__pages {
+    margin-top: 13px;
+    color: rgb(29, 123, 123);
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+.card-left__description_full {
+  max-height: max-content !important;
+  height: auto !important;
+}
+
+.card-right {
+  &__rating {
+    font-size: 17px;
+    font-weight: 700;
+    min-width: 110px;
+  }
+  &__rating span {
+    color: orange;
+    margin-left: 10px;
+  }
+}

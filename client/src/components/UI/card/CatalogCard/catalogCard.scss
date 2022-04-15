@@ -1,0 +1,52 @@
+.catalog-card {
+  max-width: 140px;
+  max-height: 400px;
+  overflow-x: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  padding: 5px;
+
+  &:hover {
+    box-shadow: 0px 0px 8px 6px #ba91914d;
+  }
+  &__image {
+    max-width: 140px;
+    height: 170px;
+  }
+
+  &__publish {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2c2c31;
+    opacity: 0.4;
+    margin-top: 5px;
+    text-align: left;
+    padding: 5px 0px;
+    max-height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    text-align: left;
+    color: #2c2c31;
+    text-overflow: ellipsis;
+    padding: 5px 0px;
+  }
+  &__author {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    color: #2c2c31c1;
+    max-height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

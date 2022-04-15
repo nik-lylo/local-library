@@ -1,0 +1,7 @@
+@import url("../../components/main/header/mainHeader.scss");
+@import url("../../components/main/body/mainBody.scss");
+.main {
+  min-height: calc(100vh - 60px - 127px);
+  display: flex;
+  flex-direction: column;
+}

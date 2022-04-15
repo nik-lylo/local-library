@@ -1,0 +1,10 @@
+@import url("../../components/genre/content/body/genreBody.scss");
+@import url("../../components/genre/content/header/genreHeader.scss");
+@import url("../../components/genre/pagination/genrePagination.scss");
+@import url("../../components/genre/content/genreContent.scss");
+.genre {
+  background: #f4f4f4;
+  min-height: calc(100vh - 60px - 127px);
+  display: flex;
+  flex-direction: column;
+}

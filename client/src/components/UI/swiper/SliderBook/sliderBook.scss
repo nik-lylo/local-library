@@ -1,0 +1,90 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-book__title {
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.slider-book__title:hover {
+  background: linear-gradient(94.43deg, #ea469a -18.98%, #ed7f67 113.48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  transition: color 0.4s easy;
+}
+.slider-book__underline {
+  margin-bottom: 30px;
+}
+
+// !Стрілка Наліво навігація-----------------------------------------------------------------------------
+
+.swiper-button-prev::after {
+  content: "" !important;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 13px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.swiper-button-prev:hover:after {
+  content: "" !important;
+  border: solid rgba(255, 166, 0, 0.811);
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 13px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+// !Стрілка Направо Навігація--------------------------------------------------------------------------------------
+
+.swiper-button-next::after {
+  content: "" !important;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 13px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.swiper-button-next:hover:after {
+  content: "" !important;
+  border: solid rgba(255, 166, 0, 0.811);
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 13px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}

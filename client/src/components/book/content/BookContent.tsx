@@ -1,5 +1,4 @@
 import React, { FC, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { useActions } from "../../../lib/hooks/useActions";
 import { useTypedSelector } from "../../../lib/hooks/useTypedSelector";
 

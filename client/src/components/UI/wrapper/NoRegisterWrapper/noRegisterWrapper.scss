@@ -1,0 +1,72 @@
+@import "../../../../scss/app/mixin.scss";
+@import "../../../../scss/app/variables.scss";
+.no-register-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 60px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    @include gradient-color;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    font-size: 21px;
+    letter-spacing: 1.5px;
+    color: $main-teal-color;
+    font-weight: 500;
+    margin-bottom: 40px;
+    max-width: 60%;
+    text-align: center;
+  }
+  &__buttons {
+    display: flex;
+    column-gap: 30px;
+  }
+  &__signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: $main-teal-color;
+    border: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background 0.4s ease;
+    &:hover {
+      background: $main-rubin-color;
+    }
+  }
+  &__signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: $main-rubin-color;
+    transition: color 0.4s ease;
+    &:hover {
+      color: $main-teal-color;
+    }
+  }
+}

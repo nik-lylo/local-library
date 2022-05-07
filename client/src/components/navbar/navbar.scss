@@ -1,3 +1,4 @@
+@import "../../scss/app/mixin.scss";
 .navbar {
   width: 100%;
   padding: 15px 0px;
@@ -39,13 +40,14 @@
     color: #232323;
   }
   &__item_selected {
-    background-image: linear-gradient(
-      94.43deg,
-      #630bcd -18.98%,
-      #e64991 113.48%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradient-color //   background-image: linear-gradient(
+      //     94.43deg,
+      //     #630bcd -18.98%,
+      //     #e64991 113.48%
+      //   );
+      //   -webkit-background-clip: text;
+      //   -webkit-text-fill-color: transparent;
+;
   }
 }
 .registration-navbar {

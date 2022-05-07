@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useActions } from "../../lib/hooks/useActions";
 import { RoutesEnum } from "../../router/RoutesEnum";
 import AvatarCustom from "../UI/avatar/AvatarCustom";
 import CustomInput from "../UI/input/custom_input/CustomInput";
@@ -7,10 +8,15 @@ import Logo from "../UI/logo/Logo";
 import "./navbar.scss";
 
 const Navbar: FC = () => {
+  const { setTypeRegisterForm, setIsRegisterPopupOpen } = useActions();
+  function handleClickOpenSignInPopup() {
+    setTypeRegisterForm("signin");
+    setIsRegisterPopupOpen(true);
+  }
+
   return (
     <nav className="navbar ">
       <div className="_container">
-        {" "}
         <div className="navbar__flex">
           <Link to={RoutesEnum.MAIN} className="navbar__logo">
             <Logo />
@@ -39,7 +45,12 @@ const Navbar: FC = () => {
           </div>
           <CustomInput />
           <div className="navbar__registration registration-navbar">
-            <button className="registration-navbar__login">Sign In</button>
+            <button
+              className="registration-navbar__login"
+              onClick={handleClickOpenSignInPopup}
+            >
+              Sign In
+            </button>
             <div className="registration-navbar__avatar">
               <AvatarCustom url="" />
             </div>

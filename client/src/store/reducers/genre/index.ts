@@ -17,6 +17,7 @@ export default function genreReducer(
       return { ...state, isGenreLoaded: action.payload };
     case GenreActionEnum.SET_TOTAL_BOOK_GENRE:
       return { ...state, totalBookGenre: action.payload };
+
     default:
       return state;
   }

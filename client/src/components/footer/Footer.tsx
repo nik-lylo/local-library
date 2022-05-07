@@ -1,4 +1,8 @@
+import { Button } from "@mui/material";
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useActions } from "../../lib/hooks/useActions";
+import { useTypedSelector } from "../../lib/hooks/useTypedSelector";
 import "./footer.scss";
 
 const Footer = () => {
